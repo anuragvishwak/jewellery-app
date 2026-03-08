@@ -1,6 +1,5 @@
 import "./App.css";
 import { IoLocationSharp } from "react-icons/io5";
-import img1 from "./jewellery-mock.jpg";
 import img2 from "./jewellery-images/andrew-hutchings-Asngw4A5_tM-unsplash.jpg";
 import img3 from "./jewellery-images/sabrianna-uiKSc7-NM2s-unsplash.jpg";
 import img4 from "./jewellery-images/sabrianna-AhIQL2CKq7g-unsplash.jpg";
