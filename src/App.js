@@ -198,7 +198,7 @@ function App() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           {[img2, img6, img7, img5, img4, img3, img2, img6, img7, img4].map(
             (img, idx) => (
               <div
