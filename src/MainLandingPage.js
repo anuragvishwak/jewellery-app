@@ -1,4 +1,3 @@
-import { IoLocationSharp } from "react-icons/io5";
 import img2 from "./jewellery-images/andrew-hutchings-Asngw4A5_tM-unsplash.jpg";
 import img3 from "./jewellery-images/sabrianna-uiKSc7-NM2s-unsplash.jpg";
 import img4 from "./jewellery-images/sabrianna-AhIQL2CKq7g-unsplash.jpg";
@@ -15,8 +14,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import { useState } from "react";
-import Collections from "./Collections";
 import Navbar from "./Navbar";
 
 function MainLandingPage() {
