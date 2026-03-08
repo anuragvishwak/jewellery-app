@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { IoLocationSharp } from "react-icons/io5";
 import img1 from "./jewellery-mock.jpg";
@@ -8,7 +7,7 @@ function App() {
   return (
     <div className="">
       <div className="relative">
-        <img src={img1} className="w-full h-60 sm:h-[600px] object-cover" />
+        <img src={img1} alt="Jewellery banner" className="w-full h-60 sm:h-[600px] object-cover" />
 
         <div className="absolute top-0 left-0 w-full p-3 sm:p-5">
           <div className="flex items-center w-full justify-between">
@@ -39,7 +38,7 @@ function App() {
 
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full h-auto" />
+            <img src={img2} alt="Jewellery banner" className="w-full h-auto" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -48,7 +47,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -57,7 +56,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -66,7 +65,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -75,7 +74,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -84,7 +83,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -93,7 +92,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -102,7 +101,7 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} className="w-full" />
+            <img src={img2} alt="Jewellery banner" className="w-full" />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
