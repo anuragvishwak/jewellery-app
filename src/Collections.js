@@ -1,6 +1,5 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
-
 import img1 from "./jewellery-images/sabrianna-uiKSc7-NM2s-unsplash.jpg";
 import img2 from "./jewellery-images/sabrianna-2z7MxnXQs3k-unsplash.jpg";
 import img3 from "./jewellery-images/sabrianna-AhIQL2CKq7g-unsplash.jpg";
