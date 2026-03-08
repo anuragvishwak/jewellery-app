@@ -12,13 +12,13 @@ function CollectionDetailing() {
   return (
     <div>
       <Navbar />
-      <div className="my-10 max-w-7xl mx-auto pt-20">
+      <div className="my-10 max-w-7xl sm:mx-5 mx-5 pt-20">
         <p className="capitalize mb-5 text-[#d2b986] text-2xl sm:text-3xl font-bold font-luxury">
           {category} Collection
         </p>
 
         {category === "rings" ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-5">
             <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
               <img
                 src={img1}
