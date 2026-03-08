@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { IoLocationSharp } from "react-icons/io5";
-import img1 from "./jewellery mock.jpg";
-import img2 from "./jewellery images/andrew-hutchings-Asngw4A5_tM-unsplash.jpg";
+import img1 from "./jewellery-mock.jpg";
+import img2 from "./jewellery-images/andrew-hutchings-Asngw4A5_tM-unsplash.jpg";
 
 function App() {
   return (
