@@ -27,326 +27,173 @@ function App() {
     useState(false);
 
   return (
-    <div className="">
+    <div className="min-h-screen bg-white">
       <div className="relative">
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
           className="w-full h-[300px] sm:h-[620px]"
         >
           <SwiperSlide>
-            <img
-              src={img10}
-              alt="Jewellery banner"
-              className="w-full h-full object-cover"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img
-              src={img11}
-              alt="Jewellery banner"
-              className="w-full h-full object-cover"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img
-              src={img12}
-              alt="Jewellery banner"
-              className="w-full h-full object-cover"
-            />
+            <img src={img10} alt="Jewellery banner 1" className="w-full h-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={img13}
-              alt="Jewellery banner"
-              className="w-full h-full object-cover"
-            />
+            <img src={img11} alt="Jewellery banner 2" className="w-full h-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img12} alt="Jewellery banner 3" className="w-full h-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img13} alt="Jewellery banner 4" className="w-full h-full object-cover" />
           </SwiperSlide>
         </Swiper>
 
         <div className="absolute inset-0 bg-black/10 z-10"></div>
 
-        <div className="absolute top-0 left-0 w-full p-3 sm:p-5 z-10">
-          <div className="fixed w-full flex justify-center">
-            <div className="bg-white flex items-center p-3 rounded-full justify-center space-x-10">
-              <p className="font-bold text-[#d2b986] border rounded-full border-[#d2b986] px-3 py-1.5 font-luxury sm:text-xl">
-                Mira Jewellers
-              </p>
+        <div className="fixed top-3 left-0 right-0 z-50 flex justify-center px-4">
+          <div className="bg-white flex items-center mx-5 sm:mx-0 justify-between rounded-full px-3 sm:px-8 py-3 w-full shadow-lg">
 
-              <div className="hidden sm:flex items-center text-[#d2b986] space-x-3 text-lg font-semibold">
-                <button>Home</button>
-                <button
-                  onClick={() => {
-                    setopeningCollectionSection(!openingCollectionSection);
-                  }}
-                >
-                  Collections
-                </button>
-                <button>About Us</button>
-                <button>Contact</button>
-              </div>
-
-              {openingCollectionSection && (
-                <Collections
-                  setopeningCollectionSection={setopeningCollectionSection}
-                />
-              )}
-
-              {menuOpen && (
-                <div className="text-[#d2b986] bg-white rounded-2xl flex flex-col justify-center right-[68px] fixed top-[85px] w-[254px] p-4 font-semibold">
-                  <button className="flex items-center space-x-1 justify-start">
-                    <FaHome /> <p>Home</p>
-                  </button>
-                  <button
-                    onClick={() => {
-                      setopeningCollectionSection(!openingCollectionSection);
-                    }}
-                    className="flex items-center space-x-1 justify-start"
-                  >
-                    <GiBigDiamondRing /> <p>Collections</p>
-                  </button>
-                  <button className="flex items-center space-x-1 justify-start">
-                    <FaAward /> <p>About Us</p>
-                  </button>
-                  <button className="flex items-center space-x-1 justify-start">
-                    <FaPhone />
-                    <p>Contact</p>
-                  </button>
-                </div>
-              )}
-
-              <div className="flex items-center space-x-2">
-                <a
-                  href="https://www.google.com/maps/place/Virar,+Maharashtra"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IoLocationSharp
-                    className="text-[#d2b986] cursor-pointer"
-                    size={30}
-                  />
-                </a>
-                <button
-                  onClick={() => {
-                    setmenuOpen(!menuOpen);
-                    console.log("hello");
-                  }}
-                >
-                  <FaBars size={20} className="text-[#d2b986] sm:hidden" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center mt-48 sm:mt-[470px] space-x-2">
-            <p className="text-[#d2b986] text-center text-sm font-bold sm:text-5xl font-luxury">
-              Crafted With Passion
+            <p className="font-bold text-[#d2b986] border-2 border-[#d2b986] px-4 py-1.5 rounded-full font-luxury text-lg sm:text-xl whitespace-nowrap">
+              Mira Jewellers
             </p>
 
-            <p className="text-white text-center italic sm:text-3xl text-sm font-semibold font-luxury">
+            <div className="hidden sm:flex items-center text-[#d2b986] space-x-8 text-lg font-semibold">
+              <button>Home</button>
+              <button
+                onClick={() => setopeningCollectionSection(!openingCollectionSection)}
+              >
+                Collections
+              </button>
+              <button>About Us</button>
+              <button>Contact</button>
+            </div>
+
+            <div className="flex items-center space-x-4 sm:space-x-6">
+              <a
+                href="https://www.google.com/maps/place/Virar,+Maharashtra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoLocationSharp className="text-[#d2b986] cursor-pointer" size={28} />
+              </a>
+              <button
+                className="sm:hidden border border-[#d2b986] rounded-full p-2"
+                onClick={() => setmenuOpen(!menuOpen)}
+              >
+                <FaBars size={20} className="text-[#d2b986]" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {menuOpen && (
+          <div className="fixed top-[85px] right-6 z-50 bg-white rounded-2xl shadow-xl p-5 w-64 text-[#d2b986] font-semibold sm:hidden">
+            <button className="flex items-center space-x-3 py-2 w-full justify-start">
+              <FaHome /> <span>Home</span>
+            </button>
+            <button
+              className="flex items-center space-x-3 py-2 w-full justify-start"
+              onClick={() => {
+                setopeningCollectionSection(!openingCollectionSection);
+                setmenuOpen(false);
+              }}
+            >
+              <GiBigDiamondRing /> <span>Collections</span>
+            </button>
+            <button className="flex items-center space-x-3 py-2 w-full justify-start">
+              <FaAward /> <span>About Us</span>
+            </button>
+            <button className="flex items-center space-x-3 py-2 w-full justify-start">
+              <FaPhone /> <span>Contact</span>
+            </button>
+          </div>
+        )}
+
+        {openingCollectionSection && (
+          <Collections setOpeningCollectionSection={setopeningCollectionSection} />
+        )}
+
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center px-4 w-full">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p className="text-[#d2b986] text-2xl sm:text-5xl font-bold font-luxury">
+              Crafted With Passion
+            </p>
+            <p className="text-white text-xl sm:text-3xl italic font-semibold font-luxury">
               Worn With Pride
             </p>
           </div>
         </div>
       </div>
 
-      <div className="m-3 sm:m-5">
-        <div>
-          <div className="mb-3">
-            <p className="text-[#d2b986] text-xl sm:text-3xl font-bold font-luxury">
-              Customer Favorites
-            </p>
-            <p className="font-semibold text-[#8b857c] text-sm sm:text-base font-luxury italic">
-              Jewellery that shines brighter every day.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1  gap-3 sm:gap-5 sm:grid-cols-3">
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img3}
-              alt="Jewellery banner"
-              className="w-full h-96 sm:h-[450px]"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">Golden Rings</p>
-            <p className="text-sm text-[#8b857c] text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img4}
-              alt="Jewellery banner"
-              className="w-full h-96 sm:h-[450px]"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img5}
-              alt="Jewellery banner"
-              className="w-full h-96 sm:h-[450px]"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-        </div>
-
-        <div className="mb-3 mt-3 sm:mt-5">
-          <p className="text-[#d2b986] text-xl sm:text-3xl font-bold font-luxury">
-            Our Products
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="mb-10">
+          <h2 className="text-[#d2b986] text-2xl sm:text-4xl font-bold font-luxury">
+            Customer Favorites
+          </h2>
+          <p className="text-[#8b857c] font-semibold italic mt-1">
+            Jewellery that shines brighter every day.
           </p>
-          <p className="font-semibold text-[#8b857c] text-sm sm:text-base font-luxury italic">
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {[
+            { img: img3, title: "Golden Rings" },
+            { img: img4, title: "Golden Bloom Earrings" },
+            { img: img5, title: "Timeless Gold Necklace" },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-80 sm:h-96 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-[#d2b986] font-luxury font-bold text-lg">
+                  {item.title}
+                </h3>
+                <p className="text-[#8b857c] text-sm mt-1">
+                  Elegant floral-inspired gold jewellery crafted for timeless beauty.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 mb-10">
+          <h2 className="text-[#d2b986] text-2xl sm:text-4xl font-bold font-luxury">
+            Our Products
+          </h2>
+          <p className="text-[#8b857c] font-semibold italic mt-1">
             Crafted with precision, designed for elegance.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-5">
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img6}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img2}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img7}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img5}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img4}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img7}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img4}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img2}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img6}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
-          <div className="border border-gray-300 p-3 rounded">
-            <img
-              src={img5}
-              alt="Jewellery banner"
-              className="w-full h-44 sm:h-72"
-            />
-            <p className="text-[#d2b986] font-luxury font-bold">
-              Golden Bloom Earrings
-            </p>
-            <p className="text-sm text-[#8b857c] sm:text-justify">
-              Elegant floral-inspired gold earrings crafted for timeless beauty.
-            </p>
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+          {[img2, img6, img7, img5, img4, img3, img2, img6, img7, img4].map((img, idx) => (
+            <div
+              key={idx}
+              className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <img
+                src={img}
+                alt="Product"
+                className="w-full h-48 sm:h-72 object-cover"
+              />
+              <div className="p-3">
+                <h3 className="text-[#d2b986] font-luxury font-semibold">
+                  Golden Bloom Earrings
+                </h3>
+                <p className="text-[#8b857c] text-xs sm:text-sm mt-1">
+                  Elegant floral-inspired gold earrings crafted for timeless beauty.
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
