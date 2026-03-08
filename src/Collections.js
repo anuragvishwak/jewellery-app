@@ -23,20 +23,20 @@ function Collections({ setopeningCollectionSection }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           <div>
-            <img src={img1} className="h-20 w-20 sm:32 sm:w-auto" />
+            <img src={img1} alt="Jewellery banner" className="h-20 w-20 sm:32 sm:w-auto" />
             <p className="sm:text-center italic font-semibold text-[#8b857c]">Rings</p>
           </div>
 
           <div>
-            <img src={img2} className="h-20 w-20 sm:32 sm:w-auto" />
+            <img src={img2} alt="Jewellery banner" className="h-20 w-20 sm:32 sm:w-auto" />
             <p className="sm:text-center italic font-semibold text-[#8b857c]">Necklaces</p>
           </div>
           <div>
-            <img src={img3} className="h-20 w-20 sm:32 sm:w-auto" />
+            <img src={img3} alt="Jewellery banner" className="h-20 w-20 sm:32 sm:w-auto" />
             <p className="sm:text-center italic font-semibold text-[#8b857c]">Pendals</p>
           </div>
           <div>
-            <img src={img4} className="h-20 w-20 sm:32 sm:w-auto" />
+            <img src={img4} alt="Jewellery banner" className="h-20 w-20 sm:32 sm:w-auto" />
             <p className="sm:text-center italic font-semibold text-[#8b857c]">Bracelets</p>
           </div>
         </div>
