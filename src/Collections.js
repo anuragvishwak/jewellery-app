@@ -1,11 +1,13 @@
-import React from "react";
 import { IoMdClose } from "react-icons/io";
 import img1 from "./jewellery-images/sabrianna-uiKSc7-NM2s-unsplash.jpg";
 import img2 from "./jewellery-images/sabrianna-2z7MxnXQs3k-unsplash.jpg";
 import img3 from "./jewellery-images/sabrianna-AhIQL2CKq7g-unsplash.jpg";
 import img4 from "./jewellery-images/mariano-rivas-ZYet8yoepik-unsplash.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Collections({ setOpeningCollectionSection }) {
+  const navigation = useNavigate();
+
   return (
     <div className="fixed top-24 sm:top-28 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl px-4">
       <div className="bg-white p-6 rounded-2xl shadow-2xl">
@@ -33,11 +35,19 @@ function Collections({ setOpeningCollectionSection }) {
             { img: img3, label: "Pendants" },
             { img: img4, label: "Bracelets" },
           ].map((item, idx) => (
-            <div key={idx} className="text-center">
+            <div
+              onClick={() => {
+                const category = item.label.toLowerCase();
+                navigation(`/collectionDetailing/${category}`);
+                setOpeningCollectionSection(false);
+              }}
+              key={idx}
+              className="text-center"
+            >
               <img
                 src={item.img}
                 alt={item.label}
-                className="w-20 h-20 sm:w-28 sm:h-28 mx-auto object-cover rounded-lg shadow"
+                className="w-20 h-20 cursor-pointer sm:w-28 sm:h-28 mx-auto object-cover rounded-lg shadow"
               />
               <p className="mt-2 text-[#8b857c] font-semibold italic text-sm sm:text-base">
                 {item.label}
