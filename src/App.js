@@ -37,32 +37,49 @@ function App() {
           className="w-full h-[300px] sm:h-[620px]"
         >
           <SwiperSlide>
-            <img src={img10} alt="Jewellery banner 1" className="w-full h-full object-cover" />
+            <img
+              src={img10}
+              alt="Jewellery banner 1"
+              className="w-full h-full object-cover"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img11} alt="Jewellery banner 2" className="w-full h-full object-cover" />
+            <img
+              src={img11}
+              alt="Jewellery banner 2"
+              className="w-full h-full object-cover"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img12} alt="Jewellery banner 3" className="w-full h-full object-cover" />
+            <img
+              src={img12}
+              alt="Jewellery banner 3"
+              className="w-full h-full object-cover"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img13} alt="Jewellery banner 4" className="w-full h-full object-cover" />
+            <img
+              src={img13}
+              alt="Jewellery banner 4"
+              className="w-full h-full object-cover"
+            />
           </SwiperSlide>
         </Swiper>
 
         <div className="absolute inset-0 bg-black/10 z-10"></div>
 
         <div className="fixed top-3 left-0 right-0 z-50 flex justify-center px-4">
-          <div className="bg-white flex items-center mx-5 sm:mx-0 justify-between rounded-full px-3 sm:px-8 py-3 w-full shadow-lg">
-
+          <div className="bg-white flex items-center mx-5 sm:mx-0 justify-between rounded-full px-3 sm:px-8 py-3 w-full sm:w-6/12 shadow-lg">
             <p className="font-bold text-[#d2b986] border-2 border-[#d2b986] px-4 py-1.5 rounded-full font-luxury text-lg sm:text-xl whitespace-nowrap">
               Mira Jewellers
             </p>
 
-            <div className="hidden sm:flex items-center text-[#d2b986] space-x-8 text-lg font-semibold">
+            <div className="hidden sm:flex items-center text-[#d2b986] space-x-6 text-lg font-semibold">
               <button>Home</button>
               <button
-                onClick={() => setopeningCollectionSection(!openingCollectionSection)}
+                onClick={() =>
+                  setopeningCollectionSection(!openingCollectionSection)
+                }
               >
                 Collections
               </button>
@@ -76,7 +93,10 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IoLocationSharp className="text-[#d2b986] cursor-pointer" size={28} />
+                <IoLocationSharp
+                  className="text-[#d2b986] cursor-pointer"
+                  size={28}
+                />
               </a>
               <button
                 className="sm:hidden border border-[#d2b986] rounded-full p-2"
@@ -89,30 +109,34 @@ function App() {
         </div>
 
         {menuOpen && (
-          <div className="fixed top-[85px] right-6 z-50 bg-white rounded-2xl shadow-xl p-5 w-64 text-[#d2b986] font-semibold sm:hidden">
-            <button className="flex items-center space-x-3 py-2 w-full justify-start">
-              <FaHome /> <span>Home</span>
-            </button>
-            <button
-              className="flex items-center space-x-3 py-2 w-full justify-start"
-              onClick={() => {
-                setopeningCollectionSection(!openingCollectionSection);
-                setmenuOpen(false);
-              }}
-            >
-              <GiBigDiamondRing /> <span>Collections</span>
-            </button>
-            <button className="flex items-center space-x-3 py-2 w-full justify-start">
-              <FaAward /> <span>About Us</span>
-            </button>
-            <button className="flex items-center space-x-3 py-2 w-full justify-start">
-              <FaPhone /> <span>Contact</span>
-            </button>
+          <div className="fixed top-[90px] z-50 flex justify-center w-full text-[#d2b986] font-semibold sm:hidden">
+            <div className="w-64 bg-white rounded-xl shadow-xl p-5">
+              <button className="flex items-center space-x-3 py-2 w-full justify-start">
+                <FaHome /> <span>Home</span>
+              </button>
+              <button
+                className="flex items-center space-x-3 py-2 w-full justify-start"
+                onClick={() => {
+                  setopeningCollectionSection(!openingCollectionSection);
+                  setmenuOpen(false);
+                }}
+              >
+                <GiBigDiamondRing /> <span>Collections</span>
+              </button>
+              <button className="flex items-center space-x-3 py-2 w-full justify-start">
+                <FaAward /> <span>About Us</span>
+              </button>
+              <button className="flex items-center space-x-3 py-2 w-full justify-start">
+                <FaPhone /> <span>Contact</span>
+              </button>
+            </div>
           </div>
         )}
 
         {openingCollectionSection && (
-          <Collections setOpeningCollectionSection={setopeningCollectionSection} />
+          <Collections
+            setOpeningCollectionSection={setopeningCollectionSection}
+          />
         )}
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center px-4 w-full">
@@ -157,7 +181,8 @@ function App() {
                   {item.title}
                 </h3>
                 <p className="text-[#8b857c] text-sm mt-1">
-                  Elegant floral-inspired gold jewellery crafted for timeless beauty.
+                  Elegant floral-inspired gold jewellery crafted for timeless
+                  beauty.
                 </p>
               </div>
             </div>
@@ -174,26 +199,29 @@ function App() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
-          {[img2, img6, img7, img5, img4, img3, img2, img6, img7, img4].map((img, idx) => (
-            <div
-              key={idx}
-              className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
-            >
-              <img
-                src={img}
-                alt="Product"
-                className="w-full h-48 sm:h-72 object-cover"
-              />
-              <div className="p-3">
-                <h3 className="text-[#d2b986] font-luxury font-semibold">
-                  Golden Bloom Earrings
-                </h3>
-                <p className="text-[#8b857c] text-xs sm:text-sm mt-1">
-                  Elegant floral-inspired gold earrings crafted for timeless beauty.
-                </p>
+          {[img2, img6, img7, img5, img4, img3, img2, img6, img7, img4].map(
+            (img, idx) => (
+              <div
+                key={idx}
+                className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <img
+                  src={img}
+                  alt="Product"
+                  className="w-full h-48 sm:h-72 object-cover"
+                />
+                <div className="p-3">
+                  <h3 className="text-[#d2b986] font-luxury font-semibold">
+                    Golden Bloom Earrings
+                  </h3>
+                  <p className="text-[#8b857c] text-xs sm:text-sm mt-1">
+                    Elegant floral-inspired gold earrings crafted for timeless
+                    beauty.
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ),
+          )}
         </div>
       </div>
     </div>
