@@ -22,7 +22,7 @@ function App() {
           <div className="flex items-center w-full justify-between">
             {" "}
             <p className="font-bold text-[#d2b986] font-luxury text-2xl">
-              Jewellery Shop
+              Mira Jewellers 
             </p>
             <a
               href="https://www.google.com/maps/place/Virar,+Maharashtra"
