@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import img1 from "./jewellery-images/sabrianna-uiKSc7-NM2s-unsplash.jpg";
 import img2 from "./jewellery-images/sabrianna-2z7MxnXQs3k-unsplash.jpg";
@@ -8,9 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 function Collections({ setOpeningCollectionSection }) {
   const navigation = useNavigate();
-  const [capturingCategory, setcapturingCategory] = useState("");
-
-  console.log("finding category", capturingCategory);
 
   return (
     <div className="fixed top-24 sm:top-28 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl px-4">
