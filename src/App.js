@@ -22,9 +22,18 @@ function App() {
           <div className="flex items-center w-full justify-between">
             {" "}
             <p className="font-bold text-[#d2b986] font-luxury text-2xl">
-              Jewellery Shop
+              Mira Jewellers 
             </p>
-            <IoLocationSharp className="text-[#d2b986]" size={25} />
+            <a
+              href="https://www.google.com/maps/place/Virar,+Maharashtra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoLocationSharp
+                className="text-[#d2b986] cursor-pointer"
+                size={25}
+              />
+            </a>
           </div>
           <p className="text-[#d2b986] mt-28 sm:mt-60 mr-1 sm:mr-8 text-sm font-bold sm:text-5xl  font-luxury text-right">
             Crafted With Passion
@@ -99,7 +108,11 @@ function App() {
 
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-5">
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img6} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img6}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -108,7 +121,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img2}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -117,7 +134,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img7} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img7}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -126,7 +147,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img5} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img5}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -135,7 +160,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img4} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img4}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -144,7 +173,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img7} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img7}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -153,7 +186,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img4} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img4}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -162,7 +199,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img2} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img2}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -171,7 +212,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img6} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img6}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
@@ -180,7 +225,11 @@ function App() {
             </p>
           </div>
           <div className="border border-gray-300 p-3 rounded">
-            <img src={img5} alt="Jewellery banner" className="w-full h-44 sm:h-72" />
+            <img
+              src={img5}
+              alt="Jewellery banner"
+              className="w-full h-44 sm:h-72"
+            />
             <p className="text-[#d2b986] font-luxury font-bold">
               Golden Bloom Earrings
             </p>
