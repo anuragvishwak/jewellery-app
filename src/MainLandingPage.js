@@ -15,7 +15,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import Navbar from "./Navbar";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function MainLandingPage() {
