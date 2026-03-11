@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLandingPage from "./MainLandingPage";
 import CollectionDetailing from "./CollectionDetailing";
+import ProductDetails from "./ProductDetails";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLandingPage />} />
         <Route path="/CollectionDetailing/:category" element={<CollectionDetailing />} />
-        
+        <Route path="/ProductDetails" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );

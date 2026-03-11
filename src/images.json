@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/bracelets/M-ER-5-B.jpg",
+      "category": "bracelets"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/bracelets/M-ER-6-A.jpg",
+      "category": "bracelets"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/bracelets/M-ER-6-B.jpg",
+      "category": "bracelets"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/earrings/M-ER-3-B.jpg",
+      "category": "earrings"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/earrings/M-ER-4-A.jpg",
+      "category": "earrings"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/earrings/M-ER-4-B.jpg",
+      "category": "earrings"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/necklaces/M-ER-2-A.jpg",
+      "category": "necklaces"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/necklaces/M-ER-2-B.jpg",
+      "category": "necklaces"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/necklaces/M-ER-3-A.jpg",
+      "category": "necklaces"
+    },
+    {
+      "url": "https://d3w1b8y3jri4kg.cloudfront.net/batch-01/rings/M-ER-1-A.jpg",
+      "category": "rings"
+    }
+  ]
+}

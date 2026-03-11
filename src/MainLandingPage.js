@@ -15,9 +15,56 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 function MainLandingPage() {
-  
+
+  const navigation = useNavigate();
+
+  const products = [
+    {
+      id: 1,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img2,
+    },
+    {
+      id: 2,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img6,
+    },
+    {
+      id: 3,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img7,
+    },
+    {
+      id: 4,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img5,
+    },
+    {
+      id: 5,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img4,
+    },
+    {
+      id: 6,
+      name: "Golden Bloom Earrings",
+      description:
+        "Elegant floral-inspired gold earrings crafted for timeless beauty.",
+      image: img3,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -61,7 +108,6 @@ function MainLandingPage() {
 
         <div className="absolute inset-0 bg-black/10 z-10"></div>
         <Navbar />
-       
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
@@ -75,29 +121,25 @@ function MainLandingPage() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-          {[img2, img6, img7, img5, img4, img3, img2, img6, img7, img4].map(
-            (img, idx) => (
-              <div
-                key={idx}
-                className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
-              >
+          {products.map((product) => (
+              <div onClick={()=>{navigation('/ProductDetails')}} className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
                 <img
-                  src={img}
-                  alt="Product"
+                  src={product.image}
+                  alt={product.name}
                   className="w-full h-48 sm:h-72 object-cover"
                 />
+
                 <div className="p-3">
                   <h3 className="text-[#d2b986] font-luxury font-semibold">
-                    Golden Bloom Earrings
+                    {product.name}
                   </h3>
+
                   <p className="text-[#8b857c] text-xs sm:text-sm mt-1">
-                    Elegant floral-inspired gold earrings crafted for timeless
-                    beauty.
+                    {product.description}
                   </p>
                 </div>
               </div>
-            ),
-          )}
+          ))}
         </div>
       </div>
     </div>
